@@ -7,15 +7,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Numbers : ");
         int numbers = scanner.nextInt();
-        if ( numbers % 5 == 0){
+
+        if (numbers % 5 == 0 && numbers % 3 == 0) {
+            System.out.println("FizzBuzz");
+        }
+        else if ( numbers % 5 == 0){
             System.out.println("Fizz");
         }else if (numbers % 3 == 0){
             System.out.println("Buzz");
-        }else if (numbers % 5 == 0 && numbers % 3 == 0){
-            System.out.println("FizzBuzz");
-        }else
+        } else
             System.out.println(numbers);
+        }
 
-
-    }
 }
